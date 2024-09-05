@@ -19,7 +19,7 @@ pipeline{
                     when { expression {  params.action == 'create' } }
             steps{
             gitCheckout(
-                branch: "java-app-ps",
+                branch: "java_app_ps",
                 url: "https://github.com/prathyaksh/Java_app_ps.git"
             )
             }
